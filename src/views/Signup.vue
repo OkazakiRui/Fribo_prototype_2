@@ -1,11 +1,15 @@
 <template>
   <div>
-    <h1>Signup</h1>
+    <h1>新規登録</h1>
+    <send-email />
   </div>
 </template>
 
 <script>
-export default {};
+import SendEmail from "../components/SendEmail.vue";
+export default {
+  components: {
+    SendEmail,
+  },
+};
 </script>
-
-<style lang="scss" scoped></style>

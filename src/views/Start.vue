@@ -3,7 +3,7 @@
     <h1>Start</h1>
 
     <button @click="signup">新規登録</button>
-    <button>ログイン</button>
+    <button @click="signin">ログイン</button>
   </div>
 </template>
 
@@ -11,7 +11,10 @@
 export default {
   methods: {
     signup() {
-      router.push("signup");
+      this.$router.push({ path: "signup" });
+    },
+    signin() {
+      this.$router.push({ path: "signin" });
     },
   },
 };
